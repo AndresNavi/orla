@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 120%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(253, 190, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url("./images/palacio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  background: rgb(41, 57, 73);
+  background: linear-gradient(
+    0deg,
+    rgba(190, 152, 87, 1) 0%,
+    #293949 15%
+  );
+  color: #be9857;
+  text-align: center;
+  padding: 20px 20px 50px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px;
+}
+/* Inicio animación logo principal */
+.logo{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transition: 200ms;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+#card {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: 700ms;
+  background-image: url("./images/Logo.png");
+  background-size: cover;
+}
+.tracker {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+}
+.movimiento {
+  perspective: 800px;
+  inset: 0;
+  z-index: 200;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "tr-1 tr-2 tr-3 tr-4 tr-5"
+    "tr-6 tr-7 tr-8 tr-9 tr-10"
+    "tr-11 tr-12 tr-13 tr-14 tr-15"
+    "tr-16 tr-17 tr-18 tr-19 tr-20"
+    "tr-21 tr-22 tr-23 tr-24 tr-25";
+}
+.tr-1 {
+  grid-area: tr-1;
+}
+.tr-2 {
+  grid-area: tr-2;
+}
+.tr-3 {
+  grid-area: tr-3;
+}
+.tr-4 {
+  grid-area: tr-4;
+}
+.tr-5 {
+  grid-area: tr-5;
+}
+.tr-6 {
+  grid-area: tr-6;
+}
+.tr-7 {
+  grid-area: tr-7;
+}
+.tr-8 {
+  grid-area: tr-8;
+}
+.tr-9 {
+  grid-area: tr-9;
+}
+.tr-10 {
+  grid-area: tr-10;
+}
+.tr-11 {
+  grid-area: tr-11;
+}
+.tr-12 {
+  grid-area: tr-12;
+}
+.tr-13 {
+  grid-area: tr-13;
+}
+.tr-14 {
+  grid-area: tr-14;
+}
+.tr-15 {
+  grid-area: tr-15;
+}
+.tr-16 {
+  grid-area: tr-16;
+}
+.tr-17 {
+  grid-area: tr-17;
+}
+.tr-18 {
+  grid-area: tr-18;
+}
+.tr-19 {
+  grid-area: tr-19;
+}
+.tr-20 {
+  grid-area: tr-20;
+}
+.tr-21 {
+  grid-area: tr-21;
+}
+.tr-22 {
+  grid-area: tr-22;
+}
+.tr-23 {
+  grid-area: tr-23;
+}
+.tr-24 {
+  grid-area: tr-24;
+}
+.tr-25 {
+  grid-area: tr-25;
+}
+.tr-1:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(-10deg) rotateZ(0deg);
+}
+.tr-2:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(-5deg) rotateZ(0deg);
+}
+.tr-3:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+}
+.tr-4:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(5deg) rotateZ(0deg);
+}
+.tr-5:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(10deg) rotateZ(0deg);
+}
+.tr-6:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
+}
+.tr-7:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(-5deg) rotateZ(0deg);
+}
+.tr-8:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+}
+.tr-9:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(5deg) rotateZ(0deg);
+}
+.tr-10:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+}
+.tr-11:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+}
+.tr-12:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(-5deg) rotateZ(0deg);
+}
+.tr-13:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.tr-14:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(5deg) rotateZ(0deg);
+}
+.tr-15:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+}
+.tr-16:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
+}
+.tr-17:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(-5deg) rotateZ(0deg);
+}
+.tr-18:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(0deg) rotateZ(0deg);
+}
+.tr-19:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(5deg) rotateZ(0deg);
+}
+.tr-20:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg);
+}
+.tr-21:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(-10deg) rotateZ(0deg);
+}
+.tr-22:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(-5deg) rotateZ(0deg);
+}
+.tr-23:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+}
+.tr-24:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(5deg) rotateZ(0deg);
+}
+.tr-25:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(10deg) rotateZ(0deg);
+}
+/* Final de animacion logo */
+/* Final Header */
+
+h1{
+  text-align: center;
+  padding-top: 1em;
+  color: #293949;
+  font-size: 200%;
+}
+h1:hover{
+  cursor: none;
+  transform: scale(1.1);
+  transition: 1s;
+  color: white;
+}
+.container {
+  padding: 1em;
+  margin: 0 auto;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.profesor{
+  width: 250px;
+  height: 350px;
+  background-color: aquamarine;
+  text-align: center;
+  margin: 5em;
+  padding: 5px;
+}
+
+.profesor img{
+  width: 250px;
+  height: 340px;
+}
+.profesor .foto{
+  overflow: hidden;
+}
+.miembro {
+  width: 250px;
+  height: 350px;
+  background-color: aquamarine;
+  text-align: center;
+  margin: 1em;
+  margin-bottom: 3em;
+  padding: 5px;
+}
+
+.miembro .foto {
+  overflow: hidden;
+  
+}
+.miembro img {
+  width: 250px;
+  height: 340px;
+}
