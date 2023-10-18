@@ -8,20 +8,17 @@ body {
     "Lucida Sans", Arial, sans-serif;
   font-size: 120%;
   background-image: linear-gradient(
-    to bottom,
-    rgba(253, 190, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url("./images/palacio.jpg");
+      to bottom,
+      rgba(253, 190, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./images/palacio.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 header {
   background: rgb(41, 57, 73);
-  background: linear-gradient(
-    0deg,
-    rgba(190, 152, 87, 1) 0%,
-    #293949 15%
-  );
+  background: linear-gradient(0deg, rgba(190, 152, 87, 1) 0%, #293949 15%);
   color: #be9857;
   text-align: center;
   padding: 20px 20px 50px 20px;
@@ -29,11 +26,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: 0 0 10px 5px;
 }
 /* Inicio animación logo principal */
-.logo{
+.logo {
   position: relative;
   width: 300px;
   height: 300px;
@@ -252,21 +249,39 @@ header {
 }
 /* Final de animacion logo */
 /* Final Header */
-
+/* H */
 h1{
   text-align: center;
   padding-top: 1em;
   color: #293949;
   font-size: 200%;
+  transition: 1s;
+  -webkit-text-stroke: 1.2px #293949;
 }
 h1:hover{
   cursor: none;
-  transform: scale(1.1);
+  transform: scale(1.02);
   transition: 1s;
   color: white;
 }
+h2{
+  text-align: center;
+  padding-top: 2em;
+  color: #293949;
+  font-size: 150%;
+  transition: 1s;
+  -webkit-text-stroke: 1.2px #293949;
+}
+h2:hover{
+  cursor: none;
+  transform: scale(1.02);
+  transition: 1s;
+  color: #be9857;
+}
+/* H */
+/* Inicio de la orla */
 .container {
-  padding: 1em;
+  padding: .5em;
   margin: 0 auto;
 }
 .team {
@@ -275,38 +290,93 @@ h1:hover{
   justify-content: center;
   align-content: space-between;
 }
-
-.profesor{
+.profesor {
   width: 250px;
   height: 350px;
-  background-color: aquamarine;
   text-align: center;
-  margin: 5em;
+  margin: 2em 5em 5em 5em;
   padding: 5px;
+  border-radius: 40px;
+  background-color: #293949;
+  box-shadow: #be9857 0 0 10px 5px;
 }
-
-.profesor img{
+.profesor img {
   width: 250px;
   height: 340px;
+  border-radius: 40px;
 }
-.profesor .foto{
+.profesor .foto {
   overflow: hidden;
+  border-radius: 40px;
+  transition: 3s;
+  opacity: 100%;
 }
 .miembro {
   width: 250px;
   height: 350px;
-  background-color: aquamarine;
   text-align: center;
   margin: 1em;
-  margin-bottom: 3em;
+  margin-bottom: 6em;
   padding: 5px;
+  border-radius: 40px;
+  background-color: #293949;
+  box-shadow: rgba(190, 152, 87, 1) 0 0 10px 5px;
 }
 
 .miembro .foto {
   overflow: hidden;
-  
+  border-radius: 40px;
+  transition: 3s;
+  opacity: 100%;
 }
 .miembro img {
   width: 250px;
   height: 340px;
+  border-radius: 40px;
+}
+p {
+  font-size: 25px;
+  font-weight: bold;
+  -webkit-text-stroke: 1.2px #293949;
+  color: white;
+  margin: 5px;
+}
+.foto:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  opacity: 70%;
+}
+.miembro{
+  position: relative;
+}
+.miembro .cargo{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  border-radius: 20px;
+  transition: 1s;
+}
+.miembro .cargo:hover{
+  opacity: 1;
+}
+.profesor{
+  position: relative;
+}
+.profesor .cargo{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  border-radius: 20px;
+  transition: 1s;
+}
+.profesor .cargo:hover{
+  opacity: 1;
 }
